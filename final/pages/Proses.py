@@ -1,5 +1,3 @@
-import sys
-import ast
 import numpy as np
 import pandas as pd
 import mysql.connector
@@ -7,9 +5,6 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
 from sklearn.preprocessing import StandardScaler
-from enum import Enum
-from io import BytesIO, StringIO
-from typing import Union
 
 conn = mysql.connector.connect(
     host="localhost",

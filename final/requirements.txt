@@ -1,8 +1,6 @@
 pip
-os-sys
 numpy
 pandas
 mysql-connector-python
 scikit-learn
 streamlit
-requires.io
