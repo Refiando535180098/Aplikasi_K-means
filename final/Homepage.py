@@ -25,7 +25,8 @@ with tab1:
                 disukai, disukai dan genre sangat disukai.
              """)
     st.write("Alur dari program K-Means sebagai berikut : ")
-    image = Image.open('flowchart.png',  width=500)
+    image = Image.open('./image/flowchart.png')
+    st.image(image)
 
 with tab2:
     st.write("""
@@ -33,7 +34,8 @@ with tab2:
             atau metode Data Mining yang melakukan proses pemodelan 
             unssupervised learning dan menggunakan metode yang mengelompokan data berbagai partisi.
     """)
-    image = Image.open('k-means-clustering.png',  width=500)
+    image = Image.open('./image/k-means-clustering.png')
+    st.image(image)
     st.write("Sumber : https://www.trivusi.web.id/2022/06/algoritma-kmeans-clustering.html")
 with tab3:
     st.write("Karakteristik dari K-Means Cluster : ")
