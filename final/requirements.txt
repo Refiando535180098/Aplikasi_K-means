@@ -4,7 +4,3 @@ pandas
 mysql-connector-python
 scikit-learn
 streamlit
-dataolah.csv
-kesulitan.csv
-durasi.csv
-cerita.csv
