@@ -6,13 +6,17 @@ from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
 from sklearn.preprocessing import StandardScaler
 
-conn = mysql.connector.connect(
-    host="localhost",
-    database="db_dataset",
-    user="root",
-    password="")
+#conn = mysql.connector.connect(
+#    host="3306",
+#    database="db_dataset",
+#    user="root",
+#    password="")
 
-mycursor = conn.cursor()
+#mycursor = conn.cursor()
+
+data = pd.read_csv('dataolah.csv', sep=";", usecols=[
+   "Kesulitan", "Durasi", "Cerita"])
+
 
 st.set_page_config(
     page_title="K-means app"
@@ -36,10 +40,10 @@ with tab1:
             """)
     st.write("Dikarenakan data berupa array maka dimulai dari data ke 0, maka data 0 diartikan sebagai data ke 1 dan seterusnya.")
 
-    query = "SELECT `kesulitan`, `durasi`, `cerita` FROM data_olah"
-    mycursor.execute(query)
-    data1 = mycursor.fetchall()
-    arr = np.array(data1)
+    #query = "SELECT `kesulitan`, `durasi`, `cerita` FROM data_olah"
+    #mycursor.execute(query)
+    #data1 = mycursor.fetchall()
+    arr = np.array(data)
     arr = pd.DataFrame(arr, columns=['Kesulitan','Durasi','Cerita'])
     st.table(arr)
 
