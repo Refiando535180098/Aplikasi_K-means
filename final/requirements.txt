@@ -1,6 +1,5 @@
 pip
 os-sys
-ast
 numpy
 pandas
 mysql-connector-python
