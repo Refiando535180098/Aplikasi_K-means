@@ -6,4 +6,3 @@ mysql-connector-python
 scikit-learn
 streamlit
 requires.io
-t
