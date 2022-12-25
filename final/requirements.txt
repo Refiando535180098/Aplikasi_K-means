@@ -1,0 +1,11 @@
+pip
+os-sys
+ast
+numpy
+pandas
+mysql-connector-python
+scikit-learn
+streamlit
+enum
+requires.io
+t
