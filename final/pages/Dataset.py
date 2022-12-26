@@ -7,11 +7,11 @@ st.set_page_config(
     page_title="K-means app"
 )
 
-conn = mysql.connector.connect(
-    host="localhost",
-    database="db_dataset",
-    user="root",
-    password="")
+#conn = mysql.connector.connect(
+#    host="localhost",
+#    database="db_dataset",
+#    user="root",
+#    password="")
 
 st.title("Dataset")
 
@@ -26,7 +26,7 @@ nama_dataset = st.sidebar.selectbox(
     ('Durasi', 'Kesulitan', 'Cerita')
 )
 
-mycursor = conn.cursor()
+#mycursor = conn.cursor()
 
 st.write(f"## Tabel dataset dari : {nama_dataset}")
 
@@ -39,9 +39,11 @@ if (nama_dataset == 'Durasi') :
     st.write("Dikarenakan data berupa array maka dimulai dari data ke 0, maka data 0 diartikan sebagai data ke 1 dan seterusnya.")
 
 
-    query = "SELECT `action`, `sport`, `race`, `rpg`,`fps`, `simulasi`, `strategy` FROM durasi"
-    mycursor.execute(query)
-    data1 = mycursor.fetchall()
+    #query = "SELECT `action`, `sport`, `race`, `rpg`,`fps`, `simulasi`, `strategy` FROM durasi"
+    #mycursor.execute(query)
+    #data1 = mycursor.fetchall()
+    data1 = pd.read_csv('durasi.csv', sep=";", usecols=[
+    "action", "sport", "race", "rpg", "fps", "simulasi", "strategy"])
     array = np.array(data1)
     array = pd.DataFrame(array, columns=['action', 'sport', 'race', 'rpg','fps', 'simulasi', 'strategi'])
     st.table(array)
@@ -55,10 +57,12 @@ if (nama_dataset == 'Kesulitan') :
     st.write("Dikarenakan data berupa array maka dimulai dari data ke 0, maka data 0 diartikan sebagai data ke 1 dan seterusnya.")
 
 
-    query = "SELECT `action`, `sport`, `race`, `rpg`,`fps`, `simulasi`, `strategy` FROM kesulitan"
-    mycursor.execute(query)
-    data1 = mycursor.fetchall()
-    array = np.array(data1)
+    #query = "SELECT `action`, `sport`, `race`, `rpg`,`fps`, `simulasi`, `strategy` FROM kesulitan"
+    #mycursor.execute(query)
+    #data2 = mycursor.fetchall()
+    data2 = pd.read_csv('kesulitan.csv', sep=";", usecols=[
+    "action","sport","race","rpg","fps","simulasi","strategy"])
+    array = np.array(data2)
     array = pd.DataFrame(array, columns=['action', 'sport', 'race', 'rpg','fps', 'simulasi', 'strategi'])
     st.table(array)
     
@@ -69,9 +73,11 @@ if (nama_dataset == 'Cerita') :
     st.write(" 6 : Sangat tertarik. ")
     st.write("Dikarenakan data berupa array maka dimulai dari data ke 0, maka data 0 diartikan sebagai data ke 1 dan seterusnya.")
     
-    query = "SELECT `action`, `sport`, `race`, `rpg`,`fps`, `simulasi`, `strategy` FROM cerita"
-    mycursor.execute(query)
-    data1 = mycursor.fetchall()
-    array = np.array(data1)
+    #query = "SELECT `action`, `sport`, `race`, `rpg`,`fps`, `simulasi`, `strategy` FROM cerita"
+    #mycursor.execute(query)
+    #data3 = mycursor.fetchall()
+    data3 = pd.read_csv('cerita.csv', sep=";", usecols=[
+    "action","sport","race","rpg","fps","simulasi","strategy"])
+    array = np.array(data3)
     array = pd.DataFrame(array, columns=['action', 'sport', 'race', 'rpg','fps', 'simulasi', 'strategi'])
     st.table(array)
