@@ -16,6 +16,7 @@ from sklearn.preprocessing import StandardScaler
 
 data = pd.read_csv('dataolah.csv', sep=";", usecols=[
    "Kesulitan", "Durasi", "Cerita"])
+fileScan= open(data, 'r')
 
 
 st.set_page_config(
