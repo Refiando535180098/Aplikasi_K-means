@@ -149,7 +149,7 @@ with tab2:
             st.write("0 = Action, 1 = Sport, 2 = Race, 3 = RPG, 4 = FPS, 5 = Simulasi, 6 = Strategi.")
             scaler = StandardScaler()
             scaler.fit(data)
-            df_scaled = scaler.transform(arr)
+            df_scaled = scaler.transform(data)
             df_scaled = pd.DataFrame(df_scaled, columns=['col1','col2','col3'])
             st.table(df_scaled)
             
