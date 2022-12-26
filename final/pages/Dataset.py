@@ -42,7 +42,7 @@ if (nama_dataset == 'Durasi') :
     #query = "SELECT `action`, `sport`, `race`, `rpg`,`fps`, `simulasi`, `strategy` FROM durasi"
     #mycursor.execute(query)
     #data1 = mycursor.fetchall()
-    data1 = pd.read_csv('durasi.csv', sep=";", usecols=[
+    data1 = pd.read_csv('/app/aplikasi_k-means/final/durasi.csv', sep=";", usecols=[
     "action", "sport", "race", "rpg", "fps", "simulasi", "strategy"])
     array = np.array(data1)
     array = pd.DataFrame(array, columns=['action', 'sport', 'race', 'rpg','fps', 'simulasi', 'strategi'])
@@ -60,7 +60,7 @@ if (nama_dataset == 'Kesulitan') :
     #query = "SELECT `action`, `sport`, `race`, `rpg`,`fps`, `simulasi`, `strategy` FROM kesulitan"
     #mycursor.execute(query)
     #data2 = mycursor.fetchall()
-    data2 = pd.read_csv('kesulitan.csv', sep=";", usecols=[
+    data2 = pd.read_csv('/app/aplikasi_k-means/final/kesulitan.csv', sep=";", usecols=[
     "action","sport","race","rpg","fps","simulasi","strategy"])
     array = np.array(data2)
     array = pd.DataFrame(array, columns=['action', 'sport', 'race', 'rpg','fps', 'simulasi', 'strategi'])
@@ -76,7 +76,7 @@ if (nama_dataset == 'Cerita') :
     #query = "SELECT `action`, `sport`, `race`, `rpg`,`fps`, `simulasi`, `strategy` FROM cerita"
     #mycursor.execute(query)
     #data3 = mycursor.fetchall()
-    data3 = pd.read_csv('cerita.csv', sep=";", usecols=[
+    data3 = pd.read_csv('/app/aplikasi_k-means/final/cerita.csv', sep=";", usecols=[
     "action","sport","race","rpg","fps","simulasi","strategy"])
     array = np.array(data3)
     array = pd.DataFrame(array, columns=['action', 'sport', 'race', 'rpg','fps', 'simulasi', 'strategi'])
