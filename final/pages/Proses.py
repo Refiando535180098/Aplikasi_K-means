@@ -14,7 +14,7 @@ from sklearn.preprocessing import StandardScaler
 
 #mycursor = conn.cursor()
 
-data = pd.read_csv('Aplikasi_K-means\final\dataolah.csv', sep=";", usecols=[
+data = pd.read_csv('/Aplikasi_K-means/final/dataolah.csv', sep=";", usecols=[
    "Kesulitan", "Durasi", "Cerita"])
 
 
