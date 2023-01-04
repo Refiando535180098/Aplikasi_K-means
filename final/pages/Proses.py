@@ -30,7 +30,7 @@ st.write("""
 
 nilai = st.slider('**Input klaster :**', 0, 3, 6)
 
-tab1, tab2 = st.tabs(["Data set dari database", "Data set input user"])
+tab1, tab2 = st.tabs(["Data set olah", "Data set input user"])
 
 with tab1:
     st.title("Dataset yang diolah :")
@@ -115,7 +115,7 @@ with tab1:
                     )
             st.write("C merupakan inisialisasi dari kluster, jadi jika C1 itu merupakan klaster 1 dan seterusnya.")
         else :
-            st.write(' :red[Untuk data set dari data base hanya menggunakan 3 klaster, karena sesuai dengan rancangan pembuatan aplikasi ini]')
+            st.write(' :red[Untuk data set olah hanya menggunakan 3 klaster, karena sesuai dengan rancangan pembuatan aplikasi ini]')
             st.write("Silahkan input klaster yang sesuai.")
 with tab2:
     def main():
