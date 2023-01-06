@@ -85,8 +85,8 @@ if (nama_dataset == 'Kesulitan') :
 if (nama_dataset == 'Cerita') :
     st.write(" **Berikut ini merupakan tabel dataset ketertarikan cerita.** ")
     st.write(" **Keterangan :** ")
-    st.write(" **0 : Tidak tertarik.** ")
-    st.write(" **6 : Sangat tertarik.** ")
+    st.write(" **1 : Tidak tertarik.** ")
+    st.write(" **5 : Sangat tertarik.** ")
     st.write(" **Dikarenakan data berupa array maka dimulai dari data ke 0, maka data 0 diartikan sebagai data ke 1 dan seterusnya.** ")
     
     #query = "SELECT `action`, `sport`, `race`, `rpg`,`fps`, `simulasi`, `strategy` FROM cerita"
