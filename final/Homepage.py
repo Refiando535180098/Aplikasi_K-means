@@ -4,7 +4,7 @@ from PIL import Image
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url("https://static.vecteezy.com/system/resources/thumbnails/007/522/892/small/abstract-technology-cystal-transparency-shapes-blue-color-with-white-color-space-background-vector.jpg");
+background-image: url("https://img.freepik.com/free-vector/geometric-shape-perspective-floor_1409-1837.jpg?w=2000");
 background-size: cover;
 }
 </style>
