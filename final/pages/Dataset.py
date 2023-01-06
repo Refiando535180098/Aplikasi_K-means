@@ -57,7 +57,7 @@ if (nama_dataset == 'Durasi') :
     "action", "sport", "race", "rpg", "fps", "simulasi", "strategy"])
     array = np.array(data1)
     array = pd.DataFrame(array, columns=['action', 'sport', 'race', 'rpg','fps', 'simulasi', 'strategi'])
-    st.table(array)
+    array
 
 if (nama_dataset == 'Kesulitan') :
     st.write(" Berikut ini merupakan tabel dataset tingkat kesulitan. ")
