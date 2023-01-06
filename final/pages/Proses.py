@@ -5,6 +5,7 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
 from sklearn.preprocessing import StandardScaler
+from streamlit_option_menu import option_menu
 
 #conn = mysql.connector.connect(
 #    host="3306",
@@ -45,9 +46,17 @@ st.write("""
 
 nilai = st.slider('**Input klaster :**', 0, 3, 6)
 
-tab1, tab2 = st.tabs(["**Data set olah**", "**Data set input user**"])
+selected = option_menu(
+    menu_title=None,
+    options=["**Data set olah**", "**Data set input user**"],
+    default_index=0,
+    orientation="horizontal",
+    styles={
+        "nav-link-selected" : {"background-color": "#00BFFF"},
+    }
+)
 
-with tab1:
+if selected == "Data set olah":
     st.title("Dataset yang diolah :")
     st.write("""
             **Tabel berikut ini merupakan tabel akumulasi data responden dari
@@ -132,7 +141,7 @@ with tab1:
         else :
             st.write(' :red[**Untuk data set olah hanya menggunakan 3 klaster, karena sesuai dengan rancangan pembuatan aplikasi ini**]')
             st.write("**Silahkan input klaster yang sesuai.**")
-with tab2:
+if selected == "Data set input user":
     def main():
         st.write("**File yang diinput harus bertype csv dan berformat seperti gambar dibawah ini :**") 
         st.image("/app/aplikasi_k-means/final/image/datatabel.png", width=500)
