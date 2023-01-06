@@ -122,7 +122,7 @@ if selected == "Data set olah":
             (data_y['Klaster']=='C2'),
             (data_y['Klaster']=='C3')]
             choices = ['Tidak disukai','Disukai','Sangat disukai']
-            data_y['Kelompok genre game'] = np.select(conditions, choices)
+            data_y['Kelompok genre game'] = np.select(['Genre Games'], conditions, choices)
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster', 'Kelompok genre game'])
             st.table(data_y)
             
