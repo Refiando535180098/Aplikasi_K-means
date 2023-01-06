@@ -43,7 +43,7 @@ st.write(f"## Tabel dataset dari : {nama_dataset}")
 
 if (nama_dataset == 'Durasi') :
 
-    st.write(" Berikut ini merupakan tabel dataset durasi lama bermain.")
+    st.write(" **Berikut ini merupakan tabel dataset durasi lama bermain.**")
     st.write(" Keterangan : nilai pada tabel dalam satuan jam. ")
     st.write(" 0 : tidak pernah memainkan. ")
     st.write("5 : dimainkan selama 5 jam atau lebih.")
