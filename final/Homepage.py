@@ -29,7 +29,7 @@ selected = option_menu(
     styles={
         "width": "auto",
         "height": "10px",
-        "nav-link-selected" : {"background-color": "blue"},
+        "nav-link-selected" : {"background-color": "light blue"},
     }
 )
 
