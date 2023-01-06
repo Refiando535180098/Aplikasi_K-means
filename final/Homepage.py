@@ -26,7 +26,10 @@ selected = option_menu(
     options=["Tujuan", "Pengertian K-Means", "Kelebihan dan Kekurangan"],
     menu_icon=0,
     default_index=0,
-    orientation="horizontal"
+    orientation="horizontal",
+    styles={
+        "width": "100%",
+    }
 )
 
 if selected == "Tujuan":
