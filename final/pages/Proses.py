@@ -21,8 +21,8 @@ background-image: url("https://img.freepik.com/free-vector/geometric-shape-persp
 background-size: cover;
 }
 [data-testid="stTable"] {
-width: 600px;
-class: dvn-scroll-inner hidden;
+height: 400px;
+border-style: outset;
 background-color: rgb(255, 255, 255);
 }
 </style>
