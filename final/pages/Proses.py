@@ -151,15 +151,14 @@ if selected == "Data set input user":
             return
     
         content = file.getvalue()
-        
-        if (data != ["Kolom 1","Kolom 2","Kolom 3"]):
-            st.write("Maaf data tidak sesuai.")
 
+        data = pd.read_csv(file, sep=";", usecols=["Kolom 1","Kolom 2","Kolom 3"])
+        if (data != data):
+            st.write("Maaf data tidak sesuai.")
         st.write("""
             **Tabel berikut ini merupakan tabel data dari input user untuk dilakukan proses Kmeans.**
             """)
         st.write("Dikarenakan data berupa array maka dimulai dari data ke 0, maka data 0 diartikan sebagai data ke 1 dan seterusnya.")
-        data = pd.read_csv(file, sep=";", usecols=["Kolom 1","Kolom 2","Kolom 3"])
         st.dataframe(data.head(10))
         file.close()
         
