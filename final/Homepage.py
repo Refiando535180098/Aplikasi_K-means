@@ -9,7 +9,7 @@ background-image: url("https://img.freepik.com/free-vector/geometric-shape-persp
 background-size: cover;
 }
 [data-testid="stSidebar"] {
-    background-image: url("https://wallpaper.dog/large/5486554.png");
+    background-image: url("https://img.freepik.com/premium-vector/circuit-board-microelectronics-background-with-black-white-color-horizontal-format_201911-58.jpg?w=2000");
 }
 </style>
 """
