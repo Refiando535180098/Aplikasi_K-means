@@ -124,7 +124,7 @@ if selected == "Data set olah":
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster', 'Kelompok genre game'])
             st.table(data_y)
             genre_game = [genre, data_y]
-            tb_genre = pd.concat(genre_game)
+            tb_genre = pd.concat(genre_game, ignore_index=True)
             tb_genre
             
             st.write("**Keterangan :** ")
