@@ -2,10 +2,10 @@ import streamlit as st
 from PIL import Image
 page_bg_img = """
 <style>
-[data-testid="stAppViewContainer"]{
+[data-testid="stAppViewContainer"]{{
     background-image: url("/app/aplikasi_k-means/final/image/background.jpg");
     background-size: cover;
-}
+}}
 </style>
 """
 
