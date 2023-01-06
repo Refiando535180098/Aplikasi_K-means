@@ -170,12 +170,12 @@ if selected == "Data set input user":
             scaler = StandardScaler()
             scaler.fit(data)
             df_scaled = scaler.transform(data)
-            df_scaled = pd.DataFrame(df_scaled, columns=['col1','col2','col3'])
+            df_scaled = pd.DataFrame(df_scaled, columns=['Kolom 1','Kolom 2','Kolom 3'])
             st.table(df_scaled)
             
             km = KMeans(n_clusters=nilai)
             
-            y_predicted = km.fit_predict(df_scaled[['col1','col2','col3']])
+            y_predicted = km.fit_predict(df_scaled[['Kolom 1','Kolom 2','Kolom 3']])
             data_y = y_predicted
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster'])
             
