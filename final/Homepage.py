@@ -29,6 +29,7 @@ selected = option_menu(
     orientation="horizontal",
     styles={
         "width": "auto",
+        "height": "40px",
     }
 )
 
