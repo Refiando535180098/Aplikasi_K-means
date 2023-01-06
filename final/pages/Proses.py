@@ -196,8 +196,22 @@ if selected == "Data set input user":
             (data_y['Nilai Klaster']==3),
             (data_y['Nilai Klaster']==4),
             (data_y['Nilai Klaster']==5),
-            (data_y['Nilai Klaster']==7)]
-            choices = ['C1','C2','C3','C4','C5','C6','C7']
+            (data_y['Nilai Klaster']==6),
+            (data_y['Nilai Klaster']==7),
+            (data_y['Nilai Klaster']==8),
+            (data_y['Nilai Klaster']==9),
+            (data_y['Nilai Klaster']==10),
+            (data_y['Nilai Klaster']==11),
+            (data_y['Nilai Klaster']==12),
+            (data_y['Nilai Klaster']==13),
+            (data_y['Nilai Klaster']==14),
+            (data_y['Nilai Klaster']==15),
+            (data_y['Nilai Klaster']==16),
+            (data_y['Nilai Klaster']==17),
+            (data_y['Nilai Klaster']==18),
+            (data_y['Nilai Klaster']==19)]
+            choices = ['C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14'
+                       ,'C15','C16','C17','C18','C19','C20']
             data_y['Klaster'] = np.select(conditions, choices)
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster'])
             st.table(data_y)
