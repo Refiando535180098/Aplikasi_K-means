@@ -8,7 +8,7 @@ background-size: cover;
 }}
 </style>
 """
-
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.set_page_config(
     page_title="K-means app"
