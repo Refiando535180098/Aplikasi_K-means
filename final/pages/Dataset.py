@@ -3,9 +3,20 @@ import pandas as pd
 import streamlit as st
 import mysql.connector
 
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+background-image: url("https://wallpaper.dog/large/5486554.png");
+background-size: cover;
+}
+</style>
+"""
+
 st.set_page_config(
     page_title="K-means app"
 )
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 #conn = mysql.connector.connect(
 #    host="localhost",

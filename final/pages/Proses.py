@@ -14,13 +14,24 @@ from sklearn.preprocessing import StandardScaler
 
 #mycursor = conn.cursor()
 
-data = pd.read_csv('/app/aplikasi_k-means/final/dataolah.csv', sep=";", usecols=[
-   "Kesulitan", "Durasi", "Cerita"])
-
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+background-image: url("https://wallpaper.dog/large/5486554.png");
+background-size: cover;
+}
+</style>
+"""
 
 st.set_page_config(
     page_title="K-means app"
 )
+
+data = pd.read_csv('/app/aplikasi_k-means/final/dataolah.csv', sep=";", usecols=[
+   "Kesulitan", "Durasi", "Cerita"])
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.title("Proses K-Means")
 st.write("""
             Dalam pengelompokan menggunakan K-means dibutuhkan penentuan jumlah
