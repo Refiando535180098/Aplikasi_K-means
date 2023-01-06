@@ -162,8 +162,8 @@ if selected == "Data set input user":
             """)
         st.write("**Dikarenakan data berupa array maka dimulai dari data ke 0, maka data 0 diartikan sebagai data ke 1 dan seterusnya.**")
         data = pd.read_csv(file, sep=";", usecols=["Kolom 1","Kolom 2","Kolom 3"])
-        data = st.dataframe(data.head(10))
-        st.table(data)
+        tb_data = st.dataframe(data.head(10))
+        st.table(tb_data)
         file.close()
         
         if st.button('Proses data'):
