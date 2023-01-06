@@ -24,6 +24,7 @@ st.write("Hallo selamat datang..")
 selected = option_menu(
     menu_title=None,
     options=["Tujuan", "Pengertian K-Means", "Kelebihan dan Kekurangan"],
+    menu_icon=None,
     default_index=0,
     orientation="horizontal"
 )
