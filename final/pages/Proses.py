@@ -14,11 +14,14 @@ from sklearn.preprocessing import StandardScaler
 
 #mycursor = conn.cursor()
 
-page_bg_img = """
+markdown = """
 <style>
 [data-testid="stAppViewContainer"] {
 background-image: url("https://img.freepik.com/free-vector/geometric-shape-perspective-floor_1409-1837.jpg?w=2000");
 background-size: cover;
+}
+[data-testid="stDataFrameResizable"] {
+max-width: 600px;
 }
 </style>
 """
@@ -30,7 +33,7 @@ st.set_page_config(
 data = pd.read_csv('/app/aplikasi_k-means/final/dataolah.csv', sep=";", usecols=[
    "Kesulitan", "Durasi", "Cerita"])
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
+st.markdown(markdown, unsafe_allow_html=True)
 
 st.title("Proses K-Means")
 st.write("""

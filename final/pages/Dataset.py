@@ -3,11 +3,14 @@ import pandas as pd
 import streamlit as st
 import mysql.connector
 
-page_bg_img = """
+markdown = """
 <style>
 [data-testid="stAppViewContainer"] {
 background-image: url("https://img.freepik.com/free-vector/geometric-shape-perspective-floor_1409-1837.jpg?w=2000");
 background-size: cover;
+}
+[data-testid="stDataFrameResizable"] {
+max-width: 600px;
 }
 </style>
 """
@@ -16,7 +19,7 @@ st.set_page_config(
     page_title="K-means app"
 )
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
+st.markdown(markdown, unsafe_allow_html=True)
 
 #conn = mysql.connector.connect(
 #    host="localhost",
