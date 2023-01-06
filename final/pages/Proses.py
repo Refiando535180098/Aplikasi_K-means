@@ -156,7 +156,7 @@ if selected == "Data set input user":
             **Tabel berikut ini merupakan tabel data dari input user untuk dilakukan proses Kmeans.**
             """)
         st.write("Dikarenakan data berupa array maka dimulai dari data ke 0, maka data 0 diartikan sebagai data ke 1 dan seterusnya.")
-        data = pd.read_csv(file, sep=";", usecols=["col1","col2","col3"])
+        data = pd.read_csv(file, sep=";", usecols=["Kolom 1","Kolom 2","Kolom 3"])
         st.dataframe(data.head(10))
         file.close()
         
