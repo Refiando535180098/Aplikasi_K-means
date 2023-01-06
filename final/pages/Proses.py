@@ -135,6 +135,8 @@ if selected == "Data set olah":
             data_y = pd.DataFrame(data_y, columns=['Klaster', 'Kelompok genre game'])
             genre_game = [genre, data_y]
             tb_genre = pd.concat(genre_game, axis=1)
+            st.write("")
+            st.write("**Dari hasil pengelompokan maka dapat diambil kesimpulan seperti tabel dibawah ini:**")
             st.table(tb_genre)
             
         else :
