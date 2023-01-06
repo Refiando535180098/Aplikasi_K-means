@@ -7,10 +7,6 @@ page_bg_img = """
 background-image: url("https://wallpaper.dog/large/5486501.png");
 background-size: cover;
 }
-
-[data-testid="stHeader"]{
-background-color: rgb(0, 0, 0, 0);
-}
 </style>
 """
 
