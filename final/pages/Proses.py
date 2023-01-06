@@ -151,6 +151,9 @@ if selected == "Data set input user":
             return
     
         content = file.getvalue()
+        
+        if (data != ["Kolom 1","Kolom 2","Kolom 3"]):
+            st.write("Maaf data tidak sesuai.")
 
         st.write("""
             **Tabel berikut ini merupakan tabel data dari input user untuk dilakukan proses Kmeans.**
@@ -159,9 +162,6 @@ if selected == "Data set input user":
         data = pd.read_csv(file, sep=";", usecols=["Kolom 1","Kolom 2","Kolom 3"])
         st.dataframe(data.head(10))
         file.close()
-        
-        if (data != ["Kolom 1","Kolom 2","Kolom 3"]):
-            st.write("Maaf data tidak sesuai.")
         
         if st.button('Proses data'):
             st.write("""
