@@ -43,7 +43,7 @@ st.write(f"## Tabel dataset dari : {nama_dataset}")
 
 if (nama_dataset == 'Durasi') :
 
-    st.write(" **Berikut ini merupakan tabel dataset durasi lama bermain.**")
+    st.write(" Berikut ini merupakan tabel dataset durasi lama bermain.")
     st.write(" Keterangan : nilai pada tabel dalam satuan jam. ")
     st.write(" 0 : tidak pernah memainkan. ")
     st.write("5 : dimainkan selama 5 jam atau lebih.")
@@ -75,7 +75,7 @@ if (nama_dataset == 'Kesulitan') :
     "action","sport","race","rpg","fps","simulasi","strategy"])
     array = np.array(data2)
     array = pd.DataFrame(array, columns=['action', 'sport', 'race', 'rpg','fps', 'simulasi', 'strategi'])
-    st.table(array)
+    array
     
 if (nama_dataset == 'Cerita') :
     st.write(" Berikut ini merupakan tabel dataset ketertarikan cerita. ")
@@ -91,4 +91,4 @@ if (nama_dataset == 'Cerita') :
     "action","sport","race","rpg","fps","simulasi","strategy"])
     array = np.array(data3)
     array = pd.DataFrame(array, columns=['action', 'sport', 'race', 'rpg','fps', 'simulasi', 'strategi'])
-    st.table(array)
+    array
