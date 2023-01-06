@@ -160,7 +160,7 @@ if selected == "Data set input user":
         st.write("""
             **Tabel berikut ini merupakan tabel data dari input user untuk dilakukan proses Kmeans.**
             """)
-        st.write("Dikarenakan data berupa array maka dimulai dari data ke 0, maka data 0 diartikan sebagai data ke 1 dan seterusnya.")
+        st.write("**Dikarenakan data berupa array maka dimulai dari data ke 0, maka data 0 diartikan sebagai data ke 1 dan seterusnya.**")
         data = pd.read_csv(file, sep=";", usecols=["Kolom 1","Kolom 2","Kolom 3"])
         st.dataframe(data.head(10))
         file.close()
@@ -170,8 +170,8 @@ if selected == "Data set input user":
                 Tabel dibawah ini merupakan tabel hasil data setelah melalui sekala ulang dan
                 sudah melalui tahap pengelompokan data mining menggunakan k-means. 
                 """)
-            st.write("Keterangan :")
-            st.write("0 = Action, 1 = Sport, 2 = Race, 3 = RPG, 4 = FPS, 5 = Simulasi, 6 = Strategi.")
+            st.write("**Keterangan :**")
+            st.write("**0 = Action, 1 = Sport, 2 = Race, 3 = RPG, 4 = FPS, 5 = Simulasi, 6 = Strategi.**")
             scaler = StandardScaler()
             scaler.fit(data)
             df_scaled = scaler.transform(data)
@@ -185,8 +185,8 @@ if selected == "Data set input user":
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster'])
             
             st.write("""
-                    Setelah diproses dengan K-means hasil pengelompokan data sesuai dengan
-                    klaster yang sudah ditentukan seperti pada tabel dibawah ini : 
+                    **Setelah diproses dengan K-means hasil pengelompokan data sesuai dengan
+                    klaster yang sudah ditentukan seperti pada tabel dibawah ini :** 
                 """)
             
             conditions = [
@@ -216,16 +216,16 @@ if selected == "Data set input user":
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster'])
             st.table(data_y)
             
-            st.write("Keterangan : ")
+            st.write("**Keterangan :** ")
             st.write("""
-                    Nilai Klaster merupakan tabel data dari klaster yang sudah didapatkan,
-                    dikarenakan data merupakan data array maka dimulai dari data ke 0 dan seterusnya.
+                    **Nilai Klaster merupakan tabel data dari klaster yang sudah didapatkan,
+                    dikarenakan data merupakan data array maka dimulai dari data ke 0 dan seterusnya.**
                     """
                     )
             st.write("""
-                    0 = klaster 1, 1 = klaster 2, 2 = klaster 3, dan seterusnya sampai data klaster akhir sesuai input klaster sebelumnya.
+                    **0 = klaster 1, 1 = klaster 2, 2 = klaster 3, dan seterusnya sampai data klaster akhir sesuai input klaster sebelumnya.**
                     """
                     )
-            st.write("C merupakan inisialisasi dari kluster, jadi jika C1 itu merupakan klaster 1 dan seterusnya.")
+            st.write("**C merupakan inisialisasi dari kluster, jadi jika C1 itu merupakan klaster 1 dan seterusnya.**")
     
     main()
