@@ -112,6 +112,9 @@ if selected == "Data set olah":
             data_y['Klaster'] = np.select(conditions, choices)
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster'])
             st.table(data_y)
+
+            genre = ['Action', 'Sport', 'Race', 'RPG','FPS', 'Simulasi', 'Strategi']
+            genre = pd.DataFrame(genre, columns=['Genre Games'])
             
             conditions = [
             (data_y['Klaster']=='C1'),
@@ -120,11 +123,8 @@ if selected == "Data set olah":
             choices = ['Tidak disukai','Disukai','Sangat disukai']
             data_y['Kelompok genre game'] = np.select(conditions, choices)
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster', 'Kelompok genre game'])
-            
-            genre = ['Action', 'Sport', 'Race', 'RPG','FPS', 'Simulasi', 'Strategi']
-            genre = pd.DataFrame(genre, columns=['Genre Games'])
-            
-            st.table(genre, data_y)
+            hasil = pd.merge(genre, data_y)
+            st.table(hasil)
             
             st.write("**Keterangan :** ")
             st.write("""
