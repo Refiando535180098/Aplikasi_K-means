@@ -9,7 +9,7 @@ background-image: url("https://img.freepik.com/free-vector/geometric-shape-persp
 background-size: cover;
 }
 [data-testid="stSidebar"] {
-    background-color: #79B0FF;
+    background-color: #A9E1FF;
 }
 </style>
 """
