@@ -11,7 +11,7 @@ background-size: cover;
 }
 [data-testid="stTable"] {
 width: 600px;
-height: 300px
+height: 300px;
 background-color: rgb(255, 255, 255);
 }
 </style>
