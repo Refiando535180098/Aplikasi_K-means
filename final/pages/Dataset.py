@@ -6,7 +6,7 @@ import mysql.connector
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url("https://wallpaper.dog/large/5486554.png");
+background-image: url("https://img.freepik.com/free-vector/geometric-shape-perspective-floor_1409-1837.jpg?w=2000");
 background-size: cover;
 }
 </style>
