@@ -11,7 +11,7 @@ background-size: cover;
 }
 [data-testid="stTable"] {
 width: 600px;
-class: dvn-scroll-inner hidden;
+border-style: rounded;
 background-color: rgb(255, 255, 255);
 }
 </style>
