@@ -113,7 +113,9 @@ if selected == "Data set olah":
             data_y['Klaster'] = np.select(conditions, choices)
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster'])
             st.table(data_y)
-        
+
+            genre = ["action", "sport", "race", "rpg", "fps", "simulasi", "strategy"]
+            
             conditions = [
             (data_y['Klaster']=='C1'),
             (data_y['Klaster']=='C2'),
