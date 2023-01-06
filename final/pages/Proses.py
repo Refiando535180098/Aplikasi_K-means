@@ -76,8 +76,7 @@ if selected == "Data set olah":
     st.write("""
             **Jika sudah menginput klaster yang diinginkan maka klik tombol "Proses" dibawah
             ini untuk memproses k-means dan melihat hasil pengelompokan data sesuai dengan
-            klaster. Klaster yang dapat ditentukan hanya sampai 6 klaster karena jika lebih
-            dari 6 klaster proses k-means pada data tidak effisien dalam memberikan hasil.**
+            klaster.**
             """)
 
     if st.button('Proses'):
