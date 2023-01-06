@@ -9,7 +9,7 @@ background-image: url("https://img.freepik.com/free-vector/geometric-shape-persp
 background-size: cover;
 }
 [data-testid="stSidebar"] {
-    background-image: url("https://www.pngmart.com/files/21/Tech-PNG-Background-Image.png");
+    background-image: url("https://i.pinimg.com/736x/72/bf/a9/72bfa979629ff59e0733e950f0a89bcb.jpg");
 }
 </style>
 """
