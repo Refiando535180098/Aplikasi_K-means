@@ -48,7 +48,7 @@ nilai = st.slider('**Input klaster :**', 0, 3, 6)
 
 selected = option_menu(
     menu_title=None,
-    options=["**Data set olah**", "**Data set input user**"],
+    options=["Data set olah", "Data set input user"],
     default_index=0,
     orientation="horizontal",
     styles={
