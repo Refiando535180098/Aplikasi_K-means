@@ -114,8 +114,8 @@ if selected == "Data set olah":
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster'])
             st.table(data_y)
 
-            genre = ['Action', 'Sport', 'Race', 'RPG','FPS', 'Simulasi', 'Strategi']
-            genre = pd.DataFrame(genre, columns=['Genre Games'])
+            data_y = ['Action', 'Sport', 'Race', 'RPG','FPS', 'Simulasi', 'Strategi']
+            data_y = pd.DataFrame(data_y, columns=['Genre Games'])
             
             conditions = [
             (data_y['Klaster']=='C1'),
