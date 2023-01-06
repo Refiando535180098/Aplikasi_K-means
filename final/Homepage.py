@@ -61,13 +61,13 @@ if selected == "Pengertian K-Means":
     st.image(image)
     st.write("**Sumber :** https://www.trivusi.web.id/2022/06/algoritma-kmeans-clustering.html")
 if selected == "Kelebihan dan Kekurangan":
-    st.write("**Karakteristik dari K-Means Cluster :** ")
+    st.write("**Karakteristik Kelebihan dari K-Means clustering :** ")
     st.write("**1. Cepat dalam proses clustering**")
     st.write("**2. Sensitif terhadap nilai centroid**")
     st.write("**3. Hasil dari Kmeans selalu berubah ubah(dikarenakan tidak unik)**")
     st.write("**4. Sulit meraih global optimum**")
 
-    st.write("**Kekurangan dari K-Means clustering :**")
+    st.write("**Karakteristik Kekurangan dari K-Means clustering :**")
     st.write("**1. Cluster model berbeda ditemukan**")
     st.write("**2. Sulit untuk memilih jumlah cluster yang tepat**")
     st.write("**3. Overlapping**")
