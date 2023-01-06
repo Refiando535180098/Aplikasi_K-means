@@ -32,8 +32,7 @@ st.set_page_config(
     page_title="K-means app"
 )
 
-data = pd.read_csv('/app/aplikasi_k-means/final/dataolah.csv', sep=";", usecols=[
-   "key", "Kesulitan", "Durasi", "Cerita"])
+data = pd.read_csv('/app/aplikasi_k-means/final/dataolah.csv')
 
 st.markdown(markdown, unsafe_allow_html=True)
 
