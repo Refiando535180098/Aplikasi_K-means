@@ -45,7 +45,7 @@ st.write("""
             """)
 
 #nilai = st.slider('**Input klaster :**', 0, 3, 6)
-nilai = st.text_input("Input klaster")
+nilai = st.number_input("Input klaster")
 
 
 selected = option_menu(
