@@ -145,7 +145,7 @@ if selected == "Data set input user":
     def main():
         st.write("**File yang diinput harus bertype csv dan berformat seperti gambar dibawah ini :**") 
         st.image("/app/aplikasi_k-means/final/image/datatabel.png", width=500)
-        st.write("**Catatan :")
+        st.write("**Catatan :**")
         st.write("**Dengan kolom yang bernama col1, col2, dan col3**")        
         file = st.file_uploader("**Upload file**", type=["csv"])
         show_file = st.empty()
