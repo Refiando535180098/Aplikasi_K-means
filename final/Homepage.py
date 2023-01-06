@@ -67,7 +67,7 @@ if selected == "Kelebihan dan Kekurangan":
     st.write("**3. Hasil dari Kmeans selalu berubah ubah(dikarenakan tidak unik)**")
     st.write("**4. Sulit meraih global optimum**")
 
-    st.write("Kekurangan dari K-Means clustering :**")
+    st.write("**Kekurangan dari K-Means clustering :**")
     st.write("**1. Cluster model berbeda ditemukan**")
     st.write("**2. Sulit untuk memilih jumlah cluster yang tepat**")
     st.write("**3. Overlapping**")
