@@ -33,7 +33,7 @@ st.set_page_config(
 )
 
 data = pd.read_csv('/app/aplikasi_k-means/final/dataolah.csv', sep=";", usecols=[
-   'key', "Kesulitan", "Durasi", "Cerita"])
+   "Kesulitan", "Durasi", "Cerita"])
 
 st.markdown(markdown, unsafe_allow_html=True)
 
@@ -65,7 +65,7 @@ if selected == "Data set olah":
     st.write("**Dikarenakan data berupa array maka dimulai dari data ke 0, maka data 0 diartikan sebagai data ke 1 dan seterusnya.**")
 
     arr = np.array(data)
-    arr = pd.DataFrame(arr, columns=['key', 'Kesulitan','Durasi','Cerita'])
+    arr = pd.DataFrame(arr, columns=['Kesulitan','Durasi','Cerita'])
     st.table(arr)
 
     st.write("**0 = Action, 1 = Sport, 2 = Race, 3 = RPG, 4 = FPS, 5 = Simulasi, 6 = Strategi.**")
@@ -87,12 +87,12 @@ if selected == "Data set olah":
             scaler = StandardScaler()
             scaler.fit(arr)
             df_scaled = scaler.transform(arr)
-            df_scaled = pd.DataFrame(df_scaled, columns=['key','Kesulitan','Durasi','Cerita'])
+            df_scaled = pd.DataFrame(df_scaled, columns=['Kesulitan','Durasi','Cerita'])
             st.table(df_scaled)
             
             km = KMeans(n_clusters=nilai)
             
-            y_predicted = km.fit_predict(df_scaled[['key','Kesulitan','Durasi','Cerita']])
+            y_predicted = km.fit_predict(df_scaled[['Kesulitan','Durasi','Cerita']])
             data_y = y_predicted
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster'])
             
