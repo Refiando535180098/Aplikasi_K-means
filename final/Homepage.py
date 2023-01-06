@@ -8,7 +8,7 @@ markdown = """
 background-image: url("https://img.freepik.com/free-vector/geometric-shape-perspective-floor_1409-1837.jpg?w=2000");
 background-size: cover;
 }
-[data-testid="stAppViewContainer"] {
+[data-testid="stSidebar"] {
     background-color: #1D54A4;
 }
 </style>
