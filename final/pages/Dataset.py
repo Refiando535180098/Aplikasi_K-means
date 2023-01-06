@@ -10,7 +10,7 @@ background-image: url("https://img.freepik.com/free-vector/geometric-shape-persp
 background-size: cover;
 }
 [data-testid="stDataFrameResizable"] {
-width: 800px;
+max-width: 800px;
 }
 </style>
 """
