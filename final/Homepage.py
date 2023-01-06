@@ -13,11 +13,12 @@ background-color: rgb(0, 0, 0, 0);
 }
 </style>
 """
-st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.set_page_config(
     page_title="K-means app"
 )
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.title("K-means")
 
 st.write("Hallo selamat datang..")
