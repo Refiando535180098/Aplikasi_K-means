@@ -33,7 +33,7 @@ st.write(""" Dataset didapat dari penyebaran kuisioner didapatkan sebanyak
          """)
 
 nama_dataset = st.sidebar.selectbox(
-    "Pilih dataset",
+    "**Pilih dataset**",
     ('Durasi', 'Kesulitan', 'Cerita')
 )
 
