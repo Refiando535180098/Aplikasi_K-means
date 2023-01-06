@@ -124,8 +124,8 @@ if selected == "Data set olah":
             (data_y['Klaster']=='C3')]
             choices = ['Tidak disukai','Disukai','Sangat disukai']
             data_y['Kelompok genre game'] = np.select(conditions, choices)
-            data_y = pd.DataFrame({'key':[1,2,3,4,5,6,7]})
-            data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster', 'Kelompok genre game'])
+            data_y = pd.DataFrame({'key':[1,2,3,4,5,6,7]}, data_y, columns=['Nilai Klaster', 'Klaster', 'Kelompok genre game'])
+            data_y
             #hasil = pd.merge(genre, data_y, how='inner', on=['index'])
             #st.table(hasil)
             
