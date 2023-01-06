@@ -9,8 +9,10 @@ markdown = """
 background-image: url("https://img.freepik.com/free-vector/geometric-shape-perspective-floor_1409-1837.jpg?w=2000");
 background-size: cover;
 }
-[data-testid="stDataFrameResizable"] {
-max-width: 800px;
+[data-testid="stTable"] {
+width: 600px;
+class: dvn-scroll-inner hidden;
+background-color: rgb(255, 255, 255);
 }
 </style>
 """
@@ -60,7 +62,7 @@ if (nama_dataset == 'Durasi') :
     "action", "sport", "race", "rpg", "fps", "simulasi", "strategy"])
     array = np.array(data1)
     array = pd.DataFrame(array, columns=['Action', 'Sport', 'Race', 'RPG','FPS', 'Simulasi', 'Strategi'])
-    array
+    st.Table(array)
 
 if (nama_dataset == 'Kesulitan') :
     st.write(" **Berikut ini merupakan tabel dataset tingkat kesulitan.** ")
