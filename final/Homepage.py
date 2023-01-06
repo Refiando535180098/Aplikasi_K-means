@@ -4,7 +4,7 @@ from PIL import Image
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url("https://i.pngimg.me/thumb/f/720/63bc13cf291544088a9f.jpg");
+background-image: url("https://wallpaper.dog/large/5486554.png");
 background-size: cover;
 }
 </style>
