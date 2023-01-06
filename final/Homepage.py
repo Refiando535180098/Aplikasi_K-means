@@ -20,7 +20,6 @@ st.title("K-means")
 
 st.write("Hallo selamat datang..")
 
-#tab1, tab2, tab3 = st.tabs(["Tujuan", "Pengertian K-Means", "Kelebihan dan Kekurangan"])
 selected = option_menu(
     menu_title=None,
     options=["Tujuan", "Pengertian K-Means", "Kelebihan dan Kekurangan"],
@@ -30,6 +29,7 @@ selected = option_menu(
     styles={
         "width": "auto",
         "height": "10px",
+        "icon" : {"color": "blue"},
     }
 )
 
