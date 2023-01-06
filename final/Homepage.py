@@ -3,7 +3,7 @@ from PIL import Image
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"]{
-    background-image: /app/aplikasi_k-means/final/image/background.jpg;
+    background-image: '/app/aplikasi_k-means/final/image/background.jpg';
     background-size: cover;
 }
 </style>
