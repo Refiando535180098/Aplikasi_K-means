@@ -44,7 +44,9 @@ st.write("""
             dari klaster.**
             """)
 
-nilai = st.slider('**Input klaster :**', 0, 3, 6)
+#nilai = st.slider('**Input klaster :**', 0, 3, 6)
+nilai = st.text_input("Input klaster")
+
 
 selected = option_menu(
     menu_title=None,
@@ -100,13 +102,13 @@ if selected == "Data set olah":
                     **Setelah diproses dengan K-means hasil pengelompokan data sesuai dengan
                     klaster yang sudah ditentukan seperti pada tabel dibawah ini :** 
                 """)
-            st.write("**C merupakan inisialisasi dari kluster, jadi jika C1 itu merupakan klaster 1 dan seterusnya.**")
             st.write("**Keterangan :** ")
             st.write("""
                     **Nilai Klaster merupakan tabel data dari klaster yang sudah didapatkan,
                     dikarenakan data merupakan data array maka dimulai dari data ke 0 dan seterusnya.**
                     """
                     )
+            st.write("**C merupakan inisialisasi dari kluster, jadi jika C1 itu merupakan klaster 1 dan seterusnya.**")
             st.write("""
                     **0 = klaster 1, 1 = klaster 2, 2 = klaster 3, dan seterusnya sampai data klaster akhir sesuai input klaster sebelumnya.**
                     """
