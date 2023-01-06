@@ -94,7 +94,7 @@ if selected == "Data set olah":
             
             y_predicted = km.fit_predict(df_scaled[['key','Kesulitan','Durasi','Cerita']])
             data_y = y_predicted
-            data_y = pd.DataFrame(data_y, columns=['Nilai Klaster'])
+            data_y = pd.DataFrame(data_y, columns=['key','Nilai Klaster'])
             
             st.write("""
                     **Setelah diproses dengan K-means hasil pengelompokan data sesuai dengan
@@ -107,7 +107,7 @@ if selected == "Data set olah":
             (data_y['Nilai Klaster']==2),]
             choices = ['C1','C2','C3']
             data_y['Klaster'] = np.select(conditions, choices)
-            data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster'])
+            data_y = pd.DataFrame(data_y, columns=['key','Nilai Klaster', 'Klaster'])
             st.table(data_y)
 
             genre = pd.DataFrame({'key':[1,2,3,4,5,6,7],
@@ -121,7 +121,7 @@ if selected == "Data set olah":
             (data_y['Klaster']=='C3')]
             choices = ['Tidak disukai','Disukai','Sangat disukai']
             data_y['Kelompok genre game'] = np.select(conditions, choices)
-            data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster', 'Kelompok genre game'])
+            data_y = pd.DataFrame(data_y, columns=['key','Nilai Klaster', 'Klaster', 'Kelompok genre game'])
             hasil = pd.merge(genre, data_y, how='inner', on=['key'])
             st.table(hasil)
             
