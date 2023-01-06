@@ -23,40 +23,40 @@ tab1, tab2, tab3 = st.tabs(["Tujuan", "Pengertian K-Means", "Kelebihan dan Kekur
 
 with tab1:
     st.write("""
-            Aplikasi ini dibuat untuk pengelompokan tingkat peminatan genre game menggunakan 
-            algoritma data mining K-means clustering.
+            **Aplikasi ini dibuat untuk pengelompokan tingkat peminatan genre game menggunakan 
+            algoritma data mining K-means clustering.**
     """)
-    st.write("Manfaat dari penelitian adalah sebagai berikut :")
+    st.write("**Manfaat dari penelitian adalah sebagai berikut :**")
     st.write("""
-             1. Memberikan hasil berupa informasi dari pengelompokan genre game dengan 
-                klasifikasi dan penentuan genre game yang tidak disukai, disukai dan sangat disukai;
+             **1. Memberikan hasil berupa informasi dari pengelompokan genre game dengan 
+                klasifikasi dan penentuan genre game yang tidak disukai, disukai dan sangat disukai;**
              """) 
     st.write("""
-             2. Membantu mengidentifikasi beberapa genre game untuk menentukan tidak 
-                disukai, disukai dan genre sangat disukai.
+             **2. Membantu mengidentifikasi beberapa genre game untuk menentukan tidak 
+                disukai, disukai dan genre sangat disukai.**
              """)
-    st.write("Alur dari program K-Means sebagai berikut : ")
+    st.write("**Alur dari program K-Means sebagai berikut :**")
     image = Image.open('/app/aplikasi_k-means/final/image/flowchart.png')
     st.image(image)
 
 with tab2:
     st.write("""
-            K-Means Clustering adalah suatu metode penganalisaan data
+            **K-Means Clustering adalah suatu metode penganalisaan data
             atau metode Data Mining yang melakukan proses pemodelan 
-            unssupervised learning dan menggunakan metode yang mengelompokan data berbagai partisi.
+            unssupervised learning dan menggunakan metode yang mengelompokan data berbagai partisi.**
     """)
     image = Image.open('/app/aplikasi_k-means/final/image/k-means-clustering.png')
     st.image(image)
-    st.write("Sumber : https://www.trivusi.web.id/2022/06/algoritma-kmeans-clustering.html")
+    st.write("**Sumber :** https://www.trivusi.web.id/2022/06/algoritma-kmeans-clustering.html")
 with tab3:
-    st.write("Karakteristik dari K-Means Cluster : ")
-    st.write("1. Cepat dalam proses clustering")
-    st.write("2. Sensitif terhadap nilai centroid")
-    st.write("3. Hasil dari Kmeans selalu berubah ubah(dikarenakan tidak unik)")
-    st.write("4. Sulit meraih global optimum")
+    st.write("**Karakteristik dari K-Means Cluster :** ")
+    st.write("**1. Cepat dalam proses clustering**")
+    st.write("**2. Sensitif terhadap nilai centroid**")
+    st.write("**3. Hasil dari Kmeans selalu berubah ubah(dikarenakan tidak unik)**")
+    st.write("**4. Sulit meraih global optimum**")
 
-    st.write("Kekurangan dari K-Means clustering :")
-    st.write("1. Cluster model berbeda ditemukan")
-    st.write("2. Sulit untuk memilih jumlah cluster yang tepat")
-    st.write("3. Overlapping")
-    st.write("4. Kegagalan dalam konverge")
+    st.write("Kekurangan dari K-Means clustering :**")
+    st.write("**1. Cluster model berbeda ditemukan**")
+    st.write("**2. Sulit untuk memilih jumlah cluster yang tepat**")
+    st.write("**3. Overlapping**")
+    st.write("**4. Kegagalan dalam konverge**")
