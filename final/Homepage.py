@@ -1,5 +1,14 @@
 import streamlit as st
 from PIL import Image
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"]{
+    background-image: /app/aplikasi_k-means/final/image/background.jpg;
+    background-size: cover;
+}
+</style>
+"""
+
 
 st.set_page_config(
     page_title="K-means app"
