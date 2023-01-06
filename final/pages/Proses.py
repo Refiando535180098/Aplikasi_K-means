@@ -160,6 +160,9 @@ if selected == "Data set input user":
         st.dataframe(data.head(10))
         file.close()
         
+        if (data != ["Kolom 1","Kolom 2","Kolom 3"]):
+            st.write("Maaf data tidak sesuai.")
+        
         if st.button('Proses data'):
             st.write("""
                 Tabel dibawah ini merupakan tabel hasil data setelah melalui sekala ulang dan
