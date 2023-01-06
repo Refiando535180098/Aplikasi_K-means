@@ -108,7 +108,6 @@ if selected == "Data set olah":
             choices = ['C1','C2','C3']
             data_y['Klaster'] = np.select(conditions, choices)
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster'])
-            st.table(data_y)
 
             genre = pd.DataFrame({
                       'Genre Games':['Action', 'Sport', 'Race', 'RPG','FPS', 'Simulasi', 'Strategi']
@@ -120,8 +119,9 @@ if selected == "Data set olah":
             (data_y['Klaster']=='C3')]
             choices = ['Tidak disukai','Disukai','Sangat disukai']
             data_y['Kelompok genre game'] = np.select(conditions, choices)
-            data_y = pd.DataFrame(data_y, columns=['Klaster', 'Kelompok genre game'])
+            data_y = pd.DataFrame(data_y, columns=['Nilai Klaster','Klaster', 'Kelompok genre game'])
             st.table(data_y)
+            data_y = pd.DataFrame(data_y, columns=['Klaster', 'Kelompok genre game'])
             genre_game = [genre, data_y]
             tb_genre = pd.concat(genre_game, axis=1)
             st.table(tb_genre)
