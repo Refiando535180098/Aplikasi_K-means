@@ -113,7 +113,7 @@ if selected == "Data set olah":
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster'])
             st.table(data_y)
 
-            genre = ({'key':[1,2,3,4,5,6,7],
+            genre = pd.DataFrame({'key':[1,2,3,4,5,6,7],
                       'Genre Games':['Action', 'Sport', 'Race', 'RPG','FPS', 'Simulasi', 'Strategi']
                       })
             genre
