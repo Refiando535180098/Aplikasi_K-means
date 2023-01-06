@@ -48,7 +48,7 @@ if selected == "Tujuan":
                 disukai, disukai dan genre sangat disukai.**
              """)
     st.write("**Alur dari program K-Means sebagai berikut :**")
-    image = Image.open('/app/aplikasi_k-means/final/image/flowchart.png')
+    image = Image.open('/app/aplikasi_k-means/final/image/flowchart.jpg')
     st.image(image)
 
 if selected == "Pengertian K-Means":
