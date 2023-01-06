@@ -108,12 +108,8 @@ if selected == "Data set olah":
             conditions = [
             (data_y['Nilai Klaster']==0),
             (data_y['Nilai Klaster']==1),
-            (data_y['Nilai Klaster']==2),
-            (data_y['Nilai Klaster']==3),
-            (data_y['Nilai Klaster']==4),
-            (data_y['Nilai Klaster']==5),
-            (data_y['Nilai Klaster']==7)]
-            choices = ['C1','C2','C3','C4','C5','C6','C7']
+            (data_y['Nilai Klaster']==2),]
+            choices = ['C1','C2','C3']
             data_y['Klaster'] = np.select(conditions, choices)
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster'])
             st.table(data_y)
