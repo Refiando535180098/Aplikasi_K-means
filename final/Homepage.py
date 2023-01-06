@@ -4,7 +4,7 @@ from PIL import Image
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url("https://wallpaper.dog/large/5486554.png");
+background-image: url("https://static.vecteezy.com/system/resources/thumbnails/007/522/892/small/abstract-technology-cystal-transparency-shapes-blue-color-with-white-color-space-background-vector.jpg");
 background-size: cover;
 }
 </style>
