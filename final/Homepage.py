@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+from streamlit_option_menu import option_menu
 
 markdown = """
 <style>
@@ -19,9 +20,15 @@ st.title("K-means")
 
 st.write("Hallo selamat datang..")
 
-tab1, tab2, tab3 = st.tabs(["Tujuan", "Pengertian K-Means", "Kelebihan dan Kekurangan"])
+#tab1, tab2, tab3 = st.tabs(["Tujuan", "Pengertian K-Means", "Kelebihan dan Kekurangan"])
+selected = option_menu(
+    menu_title=None,
+    options=["Tujuan", "Pengertian K-Means", "Kelebihan dan Kekurangan"],
+    default_index=0,
+    orientation="horizontal",
+)
 
-with tab1:
+if selected == "Tujuan":
     st.write("""
             **Aplikasi ini dibuat untuk pengelompokan tingkat peminatan genre game menggunakan 
             algoritma data mining K-means clustering.**
@@ -39,7 +46,7 @@ with tab1:
     image = Image.open('/app/aplikasi_k-means/final/image/flowchart.png')
     st.image(image)
 
-with tab2:
+if selected == "Pengertian K-Means":
     st.write("""
             **K-Means Clustering adalah suatu metode penganalisaan data
             atau metode Data Mining yang melakukan proses pemodelan 
@@ -48,7 +55,7 @@ with tab2:
     image = Image.open('/app/aplikasi_k-means/final/image/k-means-clustering.png')
     st.image(image)
     st.write("**Sumber :** https://www.trivusi.web.id/2022/06/algoritma-kmeans-clustering.html")
-with tab3:
+if selected == "Kelebihan dan Kekurangan":
     st.write("**Karakteristik dari K-Means Cluster :** ")
     st.write("**1. Cepat dalam proses clustering**")
     st.write("**2. Sensitif terhadap nilai centroid**")
