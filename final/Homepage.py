@@ -1,10 +1,12 @@
 import streamlit as st
 from PIL import Image
 
+
+image = Image.open('/app/aplikasi_k-means/final/image/background.jpg')
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url("https://wallpaper.dog/large/5486501.png");
+background-image: url("{image}");
 background-size: cover;
 }
 
