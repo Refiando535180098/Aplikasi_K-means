@@ -25,6 +25,9 @@ background-size: cover;
 border-style: outset;
 background-color: rgb(255, 255, 255);
 }
+[data-testid="stSidebar"] {
+    background-color: #A9E1FF;
+}
 </style>
 """
 
