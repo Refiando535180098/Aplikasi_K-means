@@ -21,7 +21,8 @@ background-image: url("https://img.freepik.com/free-vector/geometric-shape-persp
 background-size: cover;
 }
 [data-testid="stDataFrameResizable"] {
-max-width: 600px;
+width: 600px;
+background-color: rgb(255, 255, 255);
 }
 </style>
 """
