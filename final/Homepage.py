@@ -9,7 +9,7 @@ background-image: url("https://img.freepik.com/free-vector/geometric-shape-persp
 background-size: cover;
 }
 [data-testid="stSidebar"] {
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/136/028/small/blue-square-background-with-copy-space-for-creative-technology-hi-tech-wallpaper-illustration-free-vector.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBFMY2zxRHisNzH9FbJvb_0uWL_EPEfSkIAmEvI3KVdZeU6x2dWqBEA3qGPCJUYqjYgk8&usqp=CAU");
 }
 </style>
 """
