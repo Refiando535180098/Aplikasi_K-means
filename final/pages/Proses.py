@@ -115,6 +115,7 @@ if selected == "Data set olah":
             st.table(data_y)
 
             genre = ["action", "sport", "race", "rpg", "fps", "simulasi", "strategy"]
+            genre
             
             conditions = [
             (data_y['Klaster']=='C1'),
