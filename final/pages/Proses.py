@@ -114,7 +114,7 @@ if selected == "Data set olah":
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster'])
             st.table(data_y)
 
-            genre = ["action", "sport", "race", "rpg", "fps", "simulasi", "strategy"]
+            genre = ['Action', 'Sport', 'Race', 'RPG','FPS', 'Simulasi', 'Strategi']
             genre
             
             conditions = [
