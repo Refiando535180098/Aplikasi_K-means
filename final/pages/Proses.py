@@ -113,7 +113,6 @@ if selected == "Data set olah":
             genre = pd.DataFrame({
                       'Genre Games':['Action', 'Sport', 'Race', 'RPG','FPS', 'Simulasi', 'Strategi']
                       })
-            genre
             
             conditions = [
             (data_y['Klaster']=='C1'),
@@ -125,7 +124,7 @@ if selected == "Data set olah":
             st.table(data_y)
             genre_game = [genre, data_y]
             tb_genre = pd.concat(genre_game, axis=1)
-            tb_genre
+            st.table(tb_genre)
             
             st.write("**Keterangan :** ")
             st.write("""
