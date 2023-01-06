@@ -11,7 +11,7 @@ background-size: cover;
 }
 [data-testid="stTable"] {
 width: 600px;
-border-style: rounded;
+border-style: outset;
 background-color: rgb(255, 255, 255);
 }
 </style>
