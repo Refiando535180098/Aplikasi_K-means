@@ -64,9 +64,6 @@ if selected == "Data set olah":
             """)
     st.write("**Dikarenakan data berupa array maka dimulai dari data ke 0, maka data 0 diartikan sebagai data ke 1 dan seterusnya.**")
 
-    #query = "SELECT `kesulitan`, `durasi`, `cerita` FROM data_olah"
-    #mycursor.execute(query)
-    #data1 = mycursor.fetchall()
     arr = np.array(data)
     arr = pd.DataFrame(arr, columns=['Kesulitan','Durasi','Cerita'])
     st.table(arr)
@@ -113,7 +110,7 @@ if selected == "Data set olah":
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster'])
             st.table(data_y)
 
-            genre = pd.DataFrame({'Nilai Klaster':[0,1,2,3,4,5,6],
+            genre = pd.DataFrame({'key':[1,2,3,4,5,6,7],
                       'Genre Games':['Action', 'Sport', 'Race', 'RPG','FPS', 'Simulasi', 'Strategi']
                       })
             genre
@@ -125,7 +122,7 @@ if selected == "Data set olah":
             choices = ['Tidak disukai','Disukai','Sangat disukai']
             data_y['Kelompok genre game'] = np.select(conditions, choices)
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster', 'Kelompok genre game'])
-            hasil = pd.merge(genre, data_y, how='inner', on=['Nilai Klaster'])
+            hasil = pd.merge(genre, data_y, how='inner', on=['key'])
             st.table(hasil)
             
             st.write("**Keterangan :** ")
