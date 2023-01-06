@@ -100,6 +100,7 @@ if selected == "Data set olah":
                     **Setelah diproses dengan K-means hasil pengelompokan data sesuai dengan
                     klaster yang sudah ditentukan seperti pada tabel dibawah ini :** 
                 """)
+            st.write("**C merupakan inisialisasi dari kluster, jadi jika C1 itu merupakan klaster 1 dan seterusnya.**")
             
             conditions = [
             (data_y['Nilai Klaster']==0),
@@ -136,7 +137,6 @@ if selected == "Data set olah":
                     **0 = klaster 1, 1 = klaster 2, 2 = klaster 3, dan seterusnya sampai data klaster akhir sesuai input klaster sebelumnya.**
                     """
                     )
-            st.write("**C merupakan inisialisasi dari kluster, jadi jika C1 itu merupakan klaster 1 dan seterusnya.**")
         else :
             st.write(' :red[**Untuk data set olah hanya menggunakan 3 klaster, karena sesuai dengan rancangan pembuatan aplikasi ini**]')
             st.write("**Silahkan input klaster yang sesuai.**")
