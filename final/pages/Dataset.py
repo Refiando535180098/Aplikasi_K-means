@@ -34,6 +34,12 @@ st.write(""" **Dataset didapat dari penyebaran kuisioner didapatkan sebanyak
          seperti action, sport, race, rpg, fps, simulasi, dan strategi.**
          """)
 
+st.write(""" **Kriteria yang digunakan dalam data set merupakan kriteria yang dapat
+               mewakilkan untuk melihat pola ketertarikan dari para pemain game, oleh
+               karena itu data set yang diolah menggunakan kriteria berupa data durasi lama bermain, 
+               ketertarikan terhadap cerita, dan tingkat kesulitan.**
+         """)
+
 nama_dataset = st.sidebar.selectbox(
     "**Pilih dataset**",
     ('Durasi', 'Kesulitan', 'Cerita')
