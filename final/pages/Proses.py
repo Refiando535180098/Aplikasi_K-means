@@ -190,6 +190,17 @@ if selected == "Data set input user":
                     **Setelah diproses dengan K-means hasil pengelompokan data sesuai dengan
                     klaster yang sudah ditentukan seperti pada tabel dibawah ini :** 
                 """)
+            st.write("**Keterangan :** ")
+            st.write("""
+                    **Nilai Klaster merupakan tabel data dari klaster yang sudah didapatkan,
+                    dikarenakan data merupakan data array maka dimulai dari data ke 0 dan seterusnya.**
+                    """
+                    )
+            st.write("""
+                    **0 = klaster 1, 1 = klaster 2, 2 = klaster 3, dan seterusnya sampai data klaster akhir sesuai input klaster sebelumnya.**
+                    """
+                    )
+            st.write("**C merupakan inisialisasi dari kluster, jadi jika C1 itu merupakan klaster 1 dan seterusnya.**")
             
             conditions = [
             (data_y['Nilai Klaster']==0),
@@ -218,16 +229,4 @@ if selected == "Data set input user":
             data_y = pd.DataFrame(data_y, columns=['Nilai Klaster', 'Klaster'])
             st.table(data_y)
             
-            st.write("**Keterangan :** ")
-            st.write("""
-                    **Nilai Klaster merupakan tabel data dari klaster yang sudah didapatkan,
-                    dikarenakan data merupakan data array maka dimulai dari data ke 0 dan seterusnya.**
-                    """
-                    )
-            st.write("""
-                    **0 = klaster 1, 1 = klaster 2, 2 = klaster 3, dan seterusnya sampai data klaster akhir sesuai input klaster sebelumnya.**
-                    """
-                    )
-            st.write("**C merupakan inisialisasi dari kluster, jadi jika C1 itu merupakan klaster 1 dan seterusnya.**")
-    
     main()
