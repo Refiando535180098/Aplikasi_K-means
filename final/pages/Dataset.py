@@ -26,12 +26,6 @@ st.set_page_config(
 
 st.markdown(markdown, unsafe_allow_html=True)
 
-#conn = mysql.connector.connect(
-#    host="localhost",
-#    database="db_dataset",
-#    user="root",
-#    password="")
-
 st.title("Dataset")
 
 st.write(""" **Dataset didapat dari penyebaran kuisioner didapatkan sebanyak
