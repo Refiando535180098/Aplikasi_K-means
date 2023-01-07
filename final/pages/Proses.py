@@ -171,11 +171,9 @@ if selected == "Data set input user":
         
         if st.button('Proses data'):
             st.write("""
-                Tabel dibawah ini merupakan tabel hasil data setelah melalui sekala ulang dan
-                sudah melalui tahap pengelompokan data mining menggunakan k-means. 
+                **Tabel dibawah ini merupakan tabel hasil data setelah melalui sekala ulang dan
+                sudah melalui tahap pengelompokan data mining menggunakan k-means.** 
                 """)
-            st.write("**Keterangan :**")
-            st.write("**0 = Action, 1 = Sport, 2 = Race, 3 = RPG, 4 = FPS, 5 = Simulasi, 6 = Strategi.**")
             scaler = StandardScaler()
             scaler.fit(data)
             df_scaled = scaler.transform(data)
