@@ -8,9 +8,6 @@ markdown = """
 background-image: url("https://img.freepik.com/free-vector/geometric-shape-perspective-floor_1409-1837.jpg?w=2000");
 background-size: cover;
 }
-[data-testid="stSidebarNav span" class="css-pkbazv e1fqkh3o5"]{
-    icons: "house"
-}
 </style>
 """
 
