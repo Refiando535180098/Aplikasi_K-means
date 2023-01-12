@@ -18,7 +18,7 @@ st.markdown(markdown, unsafe_allow_html=True)
 
 st.title("K-means")
 
-st.write("Hallo selamat datang..")
+st.write("**Hallo selamat datang..**")
 
 selected = option_menu(
     menu_title=None,
