@@ -137,6 +137,7 @@ if selected == "Data set olah":
             tb_genre = pd.concat(genre_game, axis=1)
             st.write("")
             st.write("**Dari hasil pengelompokan maka dapat diambil kesimpulan seperti tabel dibawah ini:**")
+            st.write("**Klaster yang menunjukan anggota lebih banyak maka klaster tersebut meliputi genre game yang sangat disukai.**")
             st.table(tb_genre)
             
         else :
