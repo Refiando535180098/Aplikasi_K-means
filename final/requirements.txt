@@ -5,3 +5,4 @@ mysql-connector-python
 scikit-learn
 streamlit
 streamlit-option-menu
+matplotlib

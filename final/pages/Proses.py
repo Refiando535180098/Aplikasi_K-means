@@ -6,6 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
 from sklearn.preprocessing import StandardScaler
 from streamlit_option_menu import option_menu
+import matplotlib.pyplot as plt
 
 #conn = mysql.connector.connect(
 #    host="3306",
@@ -133,6 +134,20 @@ if selected == "Data set olah":
             st.write("**Klaster yang menunjukan anggota lebih banyak maka klaster tersebut meliputi genre game yang sangat disukai.**")
             st.table(tb_genre)
             
+            distortions = []
+            K = range(1,10)
+            for k in K:
+                kmeanModel = KMeans(n_clusters=k)
+                kmeanModel.fit(data)
+                distortions.append(kmeanModel.inertia_)
+            
+            plt.figure(figsize=(16,8))
+            plt.plot(K, distortions, 'bx-')
+            plt.xlabel('k')
+            plt.ylabel('Distortion')
+            plt.title('The Elbow Method showing the optimal k')
+            plt.show()
+                    
         else :
             st.write(' :red[**Untuk data set olah hanya menggunakan 3 klaster, karena sesuai dengan rancangan pembuatan aplikasi ini**]')
             st.write("**Silahkan input klaster yang sesuai.**")
