@@ -146,7 +146,8 @@ if selected == "Data set olah":
             plt.xlabel('k')
             plt.ylabel('Distortion')
             plt.title('The Elbow Method showing the optimal k')
-            plt.show()
+            fig = plt.show()
+            st.pyplot(fig)
                     
         else :
             st.write(' :red[**Untuk data set olah hanya menggunakan 3 klaster, karena sesuai dengan rancangan pembuatan aplikasi ini**]')
