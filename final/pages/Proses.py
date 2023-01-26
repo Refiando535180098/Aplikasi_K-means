@@ -134,19 +134,19 @@ if selected == "Data set olah":
             st.write("**Klaster yang menunjukan anggota lebih banyak maka klaster tersebut meliputi genre game yang sangat disukai.**")
             st.table(tb_genre)
             
-            distortions = []
-            K = range(1,3)
-            for k in K:
-                kmeanModel = KMeans(n_clusters=k)
-                kmeanModel.fit(data)
-                distortions.append(kmeanModel.inertia_)
+            #distortions = []
+            #K = range(1,3)
+            #for k in K:
+            #    kmeanModel = KMeans(n_clusters=k)
+            #    kmeanModel.fit(data)
+            #    distortions.append(kmeanModel.inertia_)
             
-            fig = plt.figure(figsize=(16,8))
-            fig, plot = plt.plot(K, distortions, 'bx-')
-            plt.xlabel('k')
-            plt.ylabel('Distortion')
-            plt.title('The Elbow Method showing the optimal k')
-            st.pyplot(fig)
+            #fig = plt.figure(figsize=(16,8))
+            #fig, plot = plt.plot(K, distortions, 'bx-')
+            #plt.xlabel('k')
+            #plt.ylabel('Distortion')
+            #plt.title('The Elbow Method showing the optimal k')
+            #st.pyplot(fig)
                     
         else :
             st.write(' :red[**Untuk data set olah hanya menggunakan 3 klaster, karena sesuai dengan rancangan pembuatan aplikasi ini**]')
