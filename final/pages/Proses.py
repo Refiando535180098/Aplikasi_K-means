@@ -141,12 +141,12 @@ if selected == "Data set olah":
                 kmeanModel.fit(data)
                 distortions.append(kmeanModel.inertia_)
             
-            plt.figure(figsize=(16,8))
-            plt.plot(K, distortions, 'bx-')
+            fig = plt.figure(figsize=(16,8))
+            fig, plot = plt.plot(K, distortions, 'bx-')
             plt.xlabel('k')
             plt.ylabel('Distortion')
             plt.title('The Elbow Method showing the optimal k')
-            plt.show()
+            st.pyplot(fig)
                     
         else :
             st.write(' :red[**Untuk data set olah hanya menggunakan 3 klaster, karena sesuai dengan rancangan pembuatan aplikasi ini**]')
