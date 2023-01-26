@@ -135,7 +135,7 @@ if selected == "Data set olah":
             st.table(tb_genre)
             
             distortions = []
-            K = range(nilai)
+            K = range(1,3)
             for k in K:
                 kmeanModel = KMeans(n_clusters=k)
                 kmeanModel.fit(data)
